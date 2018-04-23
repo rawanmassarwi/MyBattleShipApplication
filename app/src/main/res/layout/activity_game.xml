@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/battleship_game"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    tools:context="com.massarwi.rawan.mybattleshipapplication.activities.GameActivity">
+
+    <LinearLayout
+        android:id="@+id/upperPart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:outlineProvider="bounds"
+        android:soundEffectsEnabled="true"
+        android:weightSum="1">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/userBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"></RelativeLayout>
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/topScoresTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:stretchColumns="*">
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/shipRemainHeader"
+                    style="@style/HeadLines"
+                    android:layout_gravity="center"
+                    android:text="@string/remain_ships"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/remainingShips"
+                    android:layout_gravity="center"
+                    android:text="@string/_000"
+                    android:textColor="@android:color/background_light" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/ComputerRemainingShipHeader"
+                    style="@style/HeadLines"
+                    android:layout_gravity="center"
+                    android:text="@string/computer_remain_ships"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/ComputerShipsLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/_000"
+                    android:textColor="@android:color/background_light" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/turn"
+                    style="@style/HeadLines"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/turn"
+                    android:textColor="@android:color/background_light"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/SetAndOpBoard"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/buttons"
+        android:layout_below="@id/upperPart"
+        android:stretchColumns="*"></RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:outlineProvider="bounds"
+        android:soundEffectsEnabled="true"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/Start"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:background="#b195c0d3"
+            android:backgroundTint="#ec517281"
+            android:text="@string/start"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/Random"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="20dp"
+            android:background="#b195c0d3"
+            android:backgroundTint="#ec517281"
+            android:text="@string/random"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/Clear"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="20dp"
+            android:background="#b195c0d3"
+            android:backgroundTint="#ec517281"
+            android:text="@string/clear"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

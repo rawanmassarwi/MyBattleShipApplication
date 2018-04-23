@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_score"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="40dp"
+    tools:context="com.massarwi.rawan.mybattleshipapplication.activities.ScoreActivity">
+
+
+    <LinearLayout
+        android:id="@+id/scoreButtons"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:outlineProvider="bounds"
+        android:soundEffectsEnabled="true"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/Retry"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="20dp"
+            android:background="#b195c0d3"
+            android:backgroundTint="#ec517281"
+            android:text="@string/retry"
+            android:textColor="@color/yellow" />
+
+        <Button
+            android:id="@+id/MainMenu"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="20dp"
+            android:background="#b195c0d3"
+            android:backgroundTint="#ec517281"
+            android:text="@string/main_menu"
+            android:textColor="@color/yellow" />
+
+
+    </LinearLayout>
+</RelativeLayout>

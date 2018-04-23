@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My BattleShip Application</string>
+    <string name="select_difficulty">Select Difficulty</string>
+    <string name="Easy">Easy</string>
+    <string name="Medium">Meduim</string>
+    <string name="Hard">Hard</string>
+    <string name="start">Start</string>
+    <string name="random">Random</string>
+    <string name="time">Time</string>
+    <string name="remain_ships">Remain Ships</string>
+    <string name="computer_remain_ships">Computer Remain Ships</string>
+    <string name="_000">000</string>
+    <string name="clear">Clear</string>
+    <string name="turn">turn</string>
+    <string name="userTurn">You turn</string>
+    <string name="computerTurn">Computer turn</string>
+    <string name="_00_00">00:00</string>
+    <string name="who_win">Who win!</string>
+    <string name="retry">Retry</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="battleship">BattleShip</string>
+</resources>
